@@ -1,0 +1,446 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1297a8, #2f87c2e3,#3156d1, #0888dde5); /* Example gradient */
+    min-height: 100vh;
+  }
+
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 8px;
+    background-color: #2f97b1;
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    padding: 4px 3px 5px;
+    padding-top: 3px;
+}
+.header {
+    margin: 0;
+    padding: 13px 25px;
+    color: white;
+}
+
+nav {
+    background-color: #0e11c2;
+    overflow: hidden;
+    /*margin: 0;
+    /*padding: 0;*/
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    /*padding: 8px 0;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 14px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);   
+  overflow: hidden;
+}
+
+nav ul li input, nav ul li button {
+    flex: 1;
+    padding: 8px;
+    margin: 0 5px;
+    
+}
+
+
+
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 300px; /* Ensure columns are the same width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .same-size-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .docker-info, .jenkins-info, .ansible-info {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+      header {
+          flex-direction: column;
+      }
+      
+      header h1 {
+          margin-left: 0;
+      }
+      
+      nav ul {
+          flex-direction: column;
+      }
+  }
+  
+  .search-container {
+      display: flex;
+      align-items: center;
+  }
+  
+  .search-container input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+  }
+  
+  .search-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #5c4c4c;
+    
+      color: white;
+      cursor: pointer;
+  }
+  
+  .search-container button:hover {
+      background: linear-gradient(to right, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
+  }
+   /*banner*/
+  
+  .banner {
+      text-align: center;
+      padding: 4px;
+      color: white;
+  }
+  
+  .banner .banner-text {
+      font-size: 14px;
+      color: black;
+      text-align: justify;
+      font-weight: bold;
+  }
+  
+  @media (max-width: 1024px) {
+      .banner .banner-text {
+          margin: 0 15%;
+          font-size: 1.1rem;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .banner h2 {
+          font-size: 1.5rem;
+      }
+  
+      .banner .banner-text {
+          margin: 0 10%;
+          font-size: 1rem;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .banner h2 {
+          font-size: 1.2rem;
+      }
+  
+      .banner .banner-text {
+          margin: 0 5%;
+          font-size: 0.9rem;
+      }
+  }
+   
+  /* images*/
+  
+  /* Image styles */
+  .gallery {
+      display: flex;
+     /* overflow: hidden;*/
+      animation: moveGallery 18s linear infinite;
+  }
+  
+  .gallery img {
+      width: 130px;
+      height: 100px;
+      margin-right: 13px;
+      margin-left: 12px;
+      transition: transform 0.4s ease;
+  }
+  
+  .gallery img:hover {
+      transform: scale(1.2);
+  }
+  
+  @keyframes moveGallery {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  
+  
+  footer{
+    position:relative;
+    top:15em;
+    color:#565656;
+    width:100%;
+    margin-bottom:10px;
+  }
+  footer .container .col-sm-4 ul li a{
+    color:#565656;
+  }
+  footer .container .col-sm-4 ul li a:hover{
+    text-decoration:none;
+  }
+  
+  footer .container-fluid span{
+    font-size:30px;
+    position:absolute;
+    top:25%;
+    left:12%;
+  }
+  footer .container-fluid h3{
+    font-size:20px;
+    margin-left:30px;
+  }
+  
+  footer .contact button{
+    background-color:#565656;
+    color:#fff;
+  }
+  @media (min-width:863px){
+    footer .container-fluid span{
+    font-size:40px;
+    position:absolute;
+    top:10%;
+    
+  }
+  footer .container-fluid h3{
+   font-size:1.9rem; 
+    
+    width:70%;
+    position:relative;
+    left:15%;
+    top:-10px;
+  } 
+  }
+  
+  /*content*/
+  
+  /* Contact container styling */
+  .contact-container {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+  }
+  
+  
+  
+       
+          /**change here up*/
+  /* Responsive container for columns */
+  .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap; /* Added this for responsiveness */
+       justify-content: space-around; /* Adjust as needed */
+       
+   }
+  
+  /* Individual column styling */
+   .column {
+      flex: 1;
+      box-sizing: border-box;
+     
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+   }
+  
+  /* Content within columns */
+  .content {
+      padding: 20px;
+      text-align: center;
+   }
+  /***change
+   /* Optional: Add an overlay to improve readability of text */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 70%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+    .social-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .social-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  
+    .social-button {
+      background-color: #2912fc;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .social-button:hover {
+      background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
+    }
+  /*footer/*/
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    .column {
+      text-align: center;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .login-button, .password-button {
+      background-color: #064ee9;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+    }
+  
+  
+    .login-button:hover, .password-button:hover {
+      background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
+    }
+  
+    .contact-info {
+      font-size: 16px;
+    }
+  .label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  
+    .button {
+      background-color: #2912fc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .button:hover {
+      background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
+    }
+  
+    /*login contianer*/
+   /*dockerlogog*/
+ 
